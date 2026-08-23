@@ -12,7 +12,6 @@ final class SearchLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'search-livewire');
-        Livewire\Livewire::component('search-livewire-overview', Liberu\Foundation\SearchLivewire\Livewire\Overview::class);
+        Livewire::component('search-livewire-overview', Liberu\Foundation\SearchLivewire\Livewire\Overview::class);
     }
 }
-
